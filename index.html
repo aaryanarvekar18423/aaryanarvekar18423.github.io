@@ -1,170 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Aarya Narvekar | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-            color: #333;
-        }
-        header {
-            background-color: #1f2933;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-        h2 {
-            color: #1f2933;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        ul {
-            padding-left: 20px;
-        }
-        img {
-            margin-top: 10px;
-            border-radius: 6px;
-        }
-        footer {
-            background-color: #1f2933;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-        a {
-            color: #2563eb;
-            text-decoration: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aarya Narvekar | Portfolio</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f2f5f9;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 15px;
+}
+
+.card {
+  background: white;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  color: #1e3c72;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.card ul {
+  padding-left: 18px;
+  line-height: 1.8;
+}
+
+.card p {
+  line-height: 1.7;
+}
+
+.skills span {
+  display: inline-block;
+  background: #e6ecff;
+  color: #1e3c72;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin: 6px 6px 0 0;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Mobile friendly */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 26px;
+  }
+  .card h2 {
+    font-size: 20px;
+  }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Aarya Narvekar</h1>
-    <p>Third Year Engineering Student</p>
+  <h1>Aarya Narvekar</h1>
+  <p>Engineering Student | Developer | Technology Enthusiast</p>
 </header>
 
-<section>
+<div class="container">
+
+  <div class="card">
     <h2>About Me</h2>
-    <div class="card">
-        <p>
-            I am a second-year engineering student with a strong interest in software
-            development and electronics. I enjoy working on practical projects and
-            applying theoretical knowledge to real-world problems.
-        </p>
-    </div>
-</section>
+    <p>
+      I am a second-year engineering student with strong interest in software
+      development, web technologies, and practical problem-solving.
+      I enjoy learning new tools and building real-world projects.
+    </p>
+  </div>
 
-<section>
+  <div class="card">
+    <h2>Education</h2>
+    <ul>
+      <li>Bachelor of Engineering – Second Year</li>
+      <li>College: (Add your college name)</li>
+    </ul>
+  </div>
+
+  <div class="card">
     <h2>Skills</h2>
-    <div class="card">
-        <ul>
-            <li>Python, C, C++</li>
-            <li>Arduino & Sensors</li>
-            <li>HTML, CSS (Basics)</li>
-            <li>Machine Learning (Basics)</li>
-            <li>GitHub, Streamlit</li>
-        </ul>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Python</span>
+      <span>Basic Java</span>
+      <span>GitHub</span>
+      <span>Arduino</span>
     </div>
-</section>
+  </div>
 
-<section>
+  <div class="card">
     <h2>Projects</h2>
+    <ul>
+      <li>Smart Irrigation System using Arduino</li>
+      <li>Autism Spectrum Disorder Detection using Machine Learning</li>
+      <li>Platformer Game using Pygame</li>
+    </ul>
+  </div>
 
-    <div class="card">
-        <h3>Smart Irrigation System</h3>
-        <p>
-            An Arduino-based system that automates irrigation using soil moisture sensors
-            to conserve water efficiently.
-        </p>
-        <p><b>Tools:</b> Arduino, Soil Moisture Sensor, Relay, Water Pump</p>
-    </div>
-
-    <div class="card">
-        <h3>Autism Spectrum Disorder Detection System</h3>
-        <p>
-            A machine learning-based web application to assist in ASD detection using
-            questionnaire scores and image data.
-        </p>
-        <p><b>Tools:</b> Python, Machine Learning, Streamlit</p>
-    </div>
-
-    <div class="card">
-        <h3>Platformer Game</h3>
-        <p>
-            Developed a 2D platformer game using Python and Pygame with player movement,
-            obstacles, and scoring features.
-        </p>
-        <p><b>Tools:</b> Python, Pygame</p>
-    </div>
-</section>
-
-<section>
-    <h2>Achievements</h2>
-    <div class="card">
-        <ul>
-            <li>Completed technical workshops and online certification courses</li>
-            <li>Academic mini-projects in electronics and software development</li>
-            <li>Active participation in college technical activities</li>
-        </ul>
-    </div>
-</section>
-
-<section>
+  <div class="card">
     <h2>Certificates</h2>
+    <ul>
+      <li>Python Programming Certificate</li>
+      <li>Machine Learning Basics</li>
+      <li>Arduino Workshop Certificate</li>
+    </ul>
+  </div>
 
-    <div class="card">
-        <h3>Python Programming Certificate</h3>
-        <img src="certificates/python.jpg" alt="Python Certificate" width="100%">
-    </div>
-
-    <div class="card">
-        <h3>Arduino Workshop Certificate</h3>
-        <img src="certificates/arduino.jpg" alt="Arduino Certificate" width="100%">
-    </div>
-
-    <div class="card">
-        <h3>Machine Learning Certificate</h3>
-        <img src="certificates/ml.jpg" alt="ML Certificate" width="100%">
-    </div>
-</section>
-
-<section>
+  <div class="card">
     <h2>Contact</h2>
-    <div class="card">
-        <p>Email: your-email@gmail.com</p>
-        <p>LinkedIn:
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
-                linkedin.com/in/yourprofile
-            </a>
-        </p>
-        <p>GitHub:
-            <a href="https://github.com/aaryanarvekar18423" target="_blank">
-                github.com/aaryanarvekar18423
-            </a>
-        </p>
-    </div>
-</section>
+    <p>Email: yourname@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    <p>GitHub: github.com/aaryanarvekar18423</p>
+  </div>
+
+</div>
 
 <footer>
-    <p>© 2026 Aarya Narvekar | Portfolio</p>
+  © 2026 Aarya Narvekar
 </footer>
 
 </body>
